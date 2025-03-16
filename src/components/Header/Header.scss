@@ -1,0 +1,57 @@
+header {
+  background-color: #ffffff;
+  padding: 3rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; // Assure que le conteneur prend toute la largeur
+  padding: 1rem; // Ajoute du padding interne pour le contenu
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  &__img {
+    display: flex;
+    height: 68px;
+    @media (max-width: 1240px) {
+      max-height: 50px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  .menu {
+    display: flex;
+    gap: 30px;
+
+    &__item {
+      display: flex;
+
+      &__link {
+        display: flex;
+        font-size: 24px; // Utilisez votre valeur de taille de police
+        font-weight: 500; // Utilisez votre valeur de poids de police
+        font-family: "Montserrat", sans-serif; // Utilisez votre police principale
+
+        @media (max-width: 1240px) {
+          font-size: 18px; // Utilisez votre valeur de taille de police pour mobile
+        }
+      }
+
+      .active {
+        text-decoration: underline;
+      }
+    }
+
+    @media (max-width: 1240px) {
+      gap: 20px;
+    }
+  }
+}

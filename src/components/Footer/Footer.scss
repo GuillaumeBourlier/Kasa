@@ -1,0 +1,22 @@
+.footer {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  height: 209px; 
+  width: 100%;
+  margin-top: 50px;
+
+  &__logo {
+    width: 122px; 
+    margin-bottom: 50px; 
+  }
+
+  &__copyright {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 24px; 
+  }
+}
