@@ -1,12 +1,16 @@
 import React from "react";
 import "./Banner.scss";
-import bannerImage from "../../assets/images/banner.jpg";
+import defaultBackground from "../../assets/images/banner.jpg";
 
-function Banner() {
+function Banner({ picture = defaultBackground, title }) {
   return (
     <div className="banner">
-      <img src={bannerImage} alt="Banner" className="banner__img" />
-      <h1 className="banner__title">Chez vous, partout et ailleurs</h1>
+      <img
+        src={picture}
+        alt="Banner"
+        className={`banner__img ${title ? "banner__img__title" : ""}`}
+      />
+      {title && <h1 className="banner__title">{title}</h1>}
     </div>
   );
 }

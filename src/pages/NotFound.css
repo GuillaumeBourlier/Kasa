@@ -1,0 +1,28 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: #ff6060;
+}
+.not-found h1 {
+  font-size: 18rem;
+  margin: 0;
+  margin-bottom: 8rem;
+}
+.not-found p {
+  font-size: 2.25rem;
+  margin: 1rem 0;
+}
+.not-found a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5rem;
+}
+.not-found a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=NotFound.css.map */

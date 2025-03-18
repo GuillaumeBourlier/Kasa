@@ -1,15 +1,15 @@
-// Ce fichier représente la page d'accueil de votre application.
-// Il contient le composant Banner et peut inclure d'autres éléments spécifiques à la page d'accueil.
-
 import React from "react";
 import Banner from "../components/Banner/Banner";
+import Gallery from "../components/Gallery/Gallery";
 
 function Home() {
   return (
     <>
-      <Banner />
+      <Banner title="Chez vous, partout et ailleurs" />
       <main className="main-content">
-        {/* Ajoutez ici le contenu de la page d'accueil */}
+        <div className="gallery-container">
+          <Gallery />
+        </div>
       </main>
     </>
   );

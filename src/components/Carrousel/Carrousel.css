@@ -1,0 +1,45 @@
+.carrousel {
+  display: flex;
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+.carrousel__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+.carrousel__arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  height: 60px;
+  transform: translate(0, -50%);
+}
+@media (max-width: 769px) {
+  .carrousel__arrow {
+    height: 30px;
+  }
+}
+.carrousel .left {
+  left: 20px;
+}
+.carrousel .right {
+  right: 20px;
+}
+.carrousel__counter {
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 769px) {
+  .carrousel {
+    height: 200px;
+  }
+}/*# sourceMappingURL=Carrousel.css.map */

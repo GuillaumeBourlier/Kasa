@@ -1,0 +1,36 @@
+.tab {
+  border: 1px solid #ddd;
+  border-radius: 15px; // Ajoute des bords arrondis
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ff6060;
+    cursor: pointer;
+    color: #ffffff; // Texte en blanc
+
+    &__arrow {
+      transition: transform 0.3s;
+    }
+
+    &__arrow.open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+
+    &.open {
+      max-height: 500px; // Ajustez cette valeur en fonction de la hauteur du contenu
+    }
+  }
+}

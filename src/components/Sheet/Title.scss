@@ -1,0 +1,28 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__main {
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #ff6060; // Assurez-vous que la couleur est correcte
+    line-height: 2rem;
+    @media (max-width: 769px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 2rem;
+    @media (max-width: 769px) {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 769px) {
+    margin-top: 0px;
+  }
+}

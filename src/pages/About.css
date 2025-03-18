@@ -1,0 +1,11 @@
+.about_collapse {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+}
+@media (max-width: 769px) {
+  .about_collapse {
+    gap: 30px;
+  }
+}/*# sourceMappingURL=About.css.map */

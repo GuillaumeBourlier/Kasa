@@ -5,18 +5,27 @@ header {
 
 .header-content {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  width: 100%; // Assure que le conteneur prend toute la largeur
-  padding: 1rem; // Ajoute du padding interne pour le contenu
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  height: 68px;
+
+  @media (max-width: 1240px) {
+    padding: 0 20px;
+  }
 }
 
 .logo {
   display: flex;
   align-items: center;
+
   &__img {
     display: flex;
     height: 68px;
+
     @media (max-width: 1240px) {
       max-height: 50px;
     }
